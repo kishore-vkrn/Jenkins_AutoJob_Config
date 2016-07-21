@@ -27,7 +27,8 @@ find /usr/share/jenkins/ref/ -type f -exec bash -c "copy_reference_file '{}'" \;
 
 # if `docker run` first argument start with `--` the user is passing jenkins launcher arguments
 if [[ $# -lt 1 ]] || [[ "$1" == "--"* ]]; then
-   <<< EOF exec java $JAVA_OPTS -jar /opt/jenkins.war $JENKINS_OPTS "$@" & <<< EOF
+   # <<< EOF exec java $JAVA_OPTS -jar /opt/jenkins.war $JENKINS_OPTS "$@" & <<< EOF
+	 exec java $JAVA_OPTS -jar /opt/jenkins.war $JENKINS_OPTS "$@"
 fi
 
 sleep 10
