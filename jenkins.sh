@@ -34,7 +34,7 @@ fi
 sleep 50
 echo "Starting Job Config"
 cd /opt/jjb/
-<<< EOF exec jenkins-jobs --conf jenkins_job.ini update job.yaml <<< EOF
+<<< EOF exec jenkins-jobs --conf jenkins_job.ini update job.yaml & <<< EOF
 sleep 5h
 echo "Done"
 # As argument is not jenkins, assume user want to run his own process, for sample a `bash` shell to explore this image
