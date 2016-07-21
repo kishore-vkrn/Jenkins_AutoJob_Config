@@ -10,6 +10,8 @@ VOLUME /var/jenkins_home
 # Update & Install common packages
 RUN apt-get update && apt-get install -y wget git curl zip && apt-get install -y software-properties-common  jenkins-job-builder
 
+# DEBUG Tools
+RUN apt-get install -y vim elinks
 # Install a basic SSH server
 RUN apt-get install -y openssh-server
 RUN sed -i 's|session    required     pam_loginuid.so|session    optional     pam_loginuid.so|g' /etc/pam.d/sshd
