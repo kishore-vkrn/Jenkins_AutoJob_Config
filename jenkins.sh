@@ -31,7 +31,7 @@ if [[ $# -lt 1 ]] || [[ "$1" == "--"* ]]; then
 	 exec java $JAVA_OPTS -jar /opt/jenkins.war $JENKINS_OPTS "$@" &
 fi
 
-sleep 10
+sleep 2m
 echo "Starting Job Config"
 cd /opt/jjb/
 exec jenkins-jobs --conf jenkins_job.ini update job.yaml
