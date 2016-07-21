@@ -6,7 +6,6 @@
     block-downstream: false
     concurrent: true
     node: Mesos_slave
-    scm:
     triggers:
       - pollscm: '@hourly'
     builders:
