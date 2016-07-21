@@ -27,15 +27,15 @@ find /usr/share/jenkins/ref/ -type f -exec bash -c "copy_reference_file '{}'" \;
 
 # if `docker run` first argument start with `--` the user is passing jenkins launcher arguments
 if [[ $# -lt 1 ]] || [[ "$1" == "--"* ]]; then
-   # <<< EOF exec java $JAVA_OPTS -jar /opt/jenkins.war $JENKINS_OPTS "$@" & <<< EOF
-	 exec java $JAVA_OPTS -jar /opt/jenkins.war $JENKINS_OPTS "$@" &
+    <<< EOF exec java $JAVA_OPTS -jar /opt/jenkins.war $JENKINS_OPTS "$@" & <<< EOF
+	# exec java $JAVA_OPTS -jar /opt/jenkins.war $JENKINS_OPTS "$@" &
 fi
 
-sleep 2m
+sleep 50
 echo "Starting Job Config"
 cd /opt/jjb/
 exec jenkins-jobs --conf jenkins_job.ini update job.yaml
-sleep 5h
+#sleep 5h
 echo "Done"
 # As argument is not jenkins, assume user want to run his own process, for sample a `bash` shell to explore this image
 exec "$@"
