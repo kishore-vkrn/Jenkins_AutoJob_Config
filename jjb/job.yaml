@@ -5,9 +5,18 @@
     description: 'Do not edit this job through the web!'
     block-downstream: false
     concurrent: true
-    node: Mesos_slave
+    properties:
+       - github:
+           url: https://github.com/openstack-infra/jenkins-job-builder/
+    scm:
+       - git:
+         url: https://example.com/project.git
+         branches:
+           - master
+           - stable
+         browser: auto
     triggers:
-      - pollscm: '@hourly'
+      - github
     builders:
       - maven-builder:
           name: mvn3
