@@ -7,10 +7,10 @@
     concurrent: true
     properties:
        - github:
-          url: git@github.com:kishorramanan/locanda.git
+          url: https://github.com/kishorramanan/locanda.git
     scm:
        - git:
-          url: git@github.com:kishorramanan/locanda.git
+          url: https://github.com/kishorramanan/locanda.git
          branches:
            - master
            - stable
