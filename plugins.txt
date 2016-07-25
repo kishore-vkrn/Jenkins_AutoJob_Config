@@ -3,8 +3,16 @@ copyartifact:1.37
 promoted-builds:2.24.1
 build-pipeline-plugin:1.4.9
 jquery:1.11.2-0
+matrix-project:1.6
+matrix-project:1.6
+ssh-credentials:1.11
+promoted-builds:2.25
+parameterized-trigger:2.4 
+workflow-scm-step:1.14.2
+credentials:1.25
+mailer:1.16
+git-client:1.19.6
 git:2.5.2
-git-client:1.19.3
 github-api:1.76
 credentials:2.1.4
 token-macro:1.12.1
