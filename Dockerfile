@@ -8,7 +8,7 @@ EXPOSE 50000
 VOLUME /var/jenkins_home
 
 # Update & Install common packages
-RUN apt-get update && apt-get install -y wget git curl zip && apt-get install -y software-properties-common  jenkins-job-builder
+RUN apt-get update && apt-get install -y wget git curl zip && apt-get install -y software-properties-common jenkins-job-builder
 
 # DEBUG Tools
 RUN apt-get install -y vim elinks
