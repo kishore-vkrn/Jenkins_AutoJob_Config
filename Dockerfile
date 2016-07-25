@@ -3,7 +3,7 @@ MAINTAINER Kishore Ramanan
 
 # Expose Ports for web access and slave agents
 EXPOSE 8080
-EXPOSE 50000
+EXPOSE 5000
 
 VOLUME /var/jenkins_home
 
