@@ -7,14 +7,13 @@
     concurrent: true
     properties:
        - github:
-           url: https://github.com/openstack-infra/jenkins-job-builder/
+          url: git@github.com:kishorramanan/locanda.git
     scm:
        - git:
-         url: https://example.com/project.git
+          url: git@github.com:kishorramanan/locanda.git
          branches:
            - master
            - stable
-         browser: auto
     triggers:
       - github
     builders:
