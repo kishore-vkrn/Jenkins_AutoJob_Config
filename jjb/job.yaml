@@ -20,4 +20,4 @@
           goals: clean install
 
 - docker:
-    name: docker_image
+    name: docker_image1
