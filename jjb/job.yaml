@@ -11,9 +11,6 @@
     scm:
        - git:
           url: https://github.com/kishorramanan/locanda.git
-         branches:
-           - master
-           - stable
     triggers:
       - github
     builders:
