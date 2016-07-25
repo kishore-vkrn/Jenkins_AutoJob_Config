@@ -5,6 +5,7 @@ build-pipeline-plugin:1.4.9
 jquery:1.11.2-0
 git:2.4.2
 git-client:1.19.3
+github:1.19.3
 parameterized-trigger:2.30
 scm-api:1.0
 gradle:1.24
