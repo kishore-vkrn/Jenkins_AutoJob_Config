@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:16.04
 MAINTAINER Kishore Ramanan
 
 # Expose Ports for web access and slave agents
@@ -7,12 +7,8 @@ EXPOSE 50000
 
 VOLUME /var/jenkins_home
 
-# Update & Install common packages
-RUN apt-get update
-
-RUN apt-get install -y jenkins-job-builder
-
-RUN apt-get install -y wget git curl zip && apt-get install -y software-properties-common
+# Update & Install JJB and misc tools
+RUN apt-get update && apt-get install -y jenkins-job-builder && apt-get install -y wget curl zip && apt-get install -y software-properties-common
 
 # DEBUG Tools
 RUN apt-get install -y vim elinks
