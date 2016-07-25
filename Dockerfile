@@ -8,7 +8,7 @@ EXPOSE 50000
 VOLUME /var/jenkins_home
 
 # Update & Install common packages
-RUN apt-get update && apt-get install -y wget git curl zip && apt-get install -y software-properties-common jenkins-job-builder
+RUN apt-get update && apt-get install -y wget git curl zip && apt-get install -y software-properties-common
 
 # DEBUG Tools
 RUN apt-get install -y vim elinks
@@ -96,3 +96,4 @@ RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
 # Copy Jenkins-Job_builder Files
 RUN mkdir /opt/jjb && cd /opt/jjb
 COPY jjb/ /opt/jjb/
+RUN apt-get install -y jenkins-job-builder
