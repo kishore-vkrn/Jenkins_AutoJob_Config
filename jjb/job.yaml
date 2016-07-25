@@ -5,13 +5,17 @@
     description: 'JJB'
     block-downstream: false
     concurrent: true
+    node: master
     properties:
        - github:
           url: https://github.com/kishorramanan/locanda.git
     scm:
        - git:
           url: https://github.com/kishorramanan/locanda.git
-          per-build-tag: true
+          branches:
+             - master
+             - stable
+          browser: auto
     triggers:
        - pollscm:
           cron: "* * * * *"
