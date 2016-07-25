@@ -26,6 +26,9 @@ RUN  chmod +x /bin/tini  && echo "$TINI_SHA /bin/tini"
 #####
 RUN apt-get install -y git
 
+ENV git config --global user.email "jenkins@devops.com"
+ENV git config --global user.name "Jenkins"
+
 # JAVA
 ############
 RUN \
