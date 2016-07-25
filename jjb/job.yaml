@@ -17,8 +17,8 @@
     builders:
        - maven-target:
             maven-version: Maven3
-            pom: parent/pom.xml
-            goals: clean
+            pom: pom.xml
+            goals: clean install
 
 - docker:
     name: docker_image1
