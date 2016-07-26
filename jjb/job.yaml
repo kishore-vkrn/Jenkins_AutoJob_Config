@@ -12,7 +12,7 @@
     scm:
        - git:
           url: https://github.com/kishorramanan/locanda.git
-          per-build-tag: false
+          per-build-tag: true
     triggers:
        - pollscm:
           cron: "* * * * *"
