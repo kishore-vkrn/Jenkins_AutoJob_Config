@@ -33,3 +33,6 @@ script-security:1.21
 ssh-credentials:1.21
 ssh-slaves:1.580.1
 icon-shim:1.0.3
+github:1.19.3
+github-api:1.69
+plain-credentials:1.2

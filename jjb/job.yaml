@@ -8,10 +8,10 @@
     node: master
     properties:
        - github:
-          url: https://github.com/kishorramanan/java_Hello.git
+          url: https://github.com/kishorramanan/locanda.git
     scm:
        - git:
-          url: https://github.com/kishorramanan/java_Hello.git
+          url: https://github.com/kishorramanan/locanda.git
           branches:
             - master
           git-config-name: Kishore
