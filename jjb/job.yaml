@@ -12,10 +12,7 @@
     scm:
        - git:
           url: https://github.com/kishorramanan/locanda.git
-    triggers:
-       - pollscm:
-          cron: "* * * * *"
-    builders:
+          per-build-tag: false
        - maven-target:
             maven-version: Maven3
             pom: pom.xml
