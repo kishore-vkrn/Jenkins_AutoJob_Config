@@ -12,6 +12,7 @@
     scm:
        - git:
           url: https://github.com/kishorramanan/locanda.git
+          branches: master
           per-build-tag: true
     triggers:
        - pollscm:
