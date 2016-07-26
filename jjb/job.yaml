@@ -1,5 +1,5 @@
 - job:
-    name: Jenkins_JJB
+    name: jjb
     project-type: freestyle
     defaults: global
     description: 'JJB'
@@ -14,7 +14,8 @@
           url: https://github.com/kishorramanan/java_Hello.git
           branches:
             - master
-          per-build-tag: true
+          extensions:
+            per-build-tag: true
     triggers:
        - pollscm:
           cron: "* * * * *"
