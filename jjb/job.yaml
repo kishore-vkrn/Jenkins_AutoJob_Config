@@ -1,5 +1,5 @@
 - job:
-    name: jjb
+    name: Demo1
     project-type: freestyle
     defaults: global
     description: 'JJB'
