@@ -36,3 +36,4 @@ icon-shim:1.0.3
 github:1.19.3
 github-api:1.69
 plain-credentials:1.2
+job-dsl:1.50
